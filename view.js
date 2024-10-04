@@ -1,3 +1,4 @@
+
 updateView()
 function updateView(){
 document.getElementById("app").innerHTML = /*html*/`
@@ -6,8 +7,8 @@ document.getElementById("app").innerHTML = /*html*/`
 
 
 <input type="text" onchange="inPut(this.value)">
-    <button onclick="outPut()">add to cart</button>
-<ul>${viewBasket}</ul>
+    <button onclick="addItem()">add to cart</button>
+<ul>${outPut()}</ul>
 
 
 
@@ -15,4 +16,14 @@ document.getElementById("app").innerHTML = /*html*/`
 `;
 }
 
+function outPut(){
+   
+   let viewBasket = "";
+    for(let i = 0; i < food.length; i++){
+    viewBasket += `<li>${food[i]}</li>`;
+ console.log(i);   
+}
+
+return viewBasket
+}
  

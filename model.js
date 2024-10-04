@@ -9,4 +9,4 @@ let food = [
   "duck",
 ];
 
-let viewBasket = "";
+let newItem = "";
