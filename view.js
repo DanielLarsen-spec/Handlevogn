@@ -17,13 +17,14 @@ document.getElementById("app").innerHTML = /*html*/`
 }
 
 function outPut(){
-   
+   // Her har jeg laget en ny lokal variabel som skal kun brukes innenfor
+   // denne funskjonen, denne løkken.
    let viewBasket = "";
     for(let i = 0; i < food.length; i++){
     viewBasket += `<li>${food[i]}</li>`;
  console.log(i);   
 }
-
+// vi returnerer viewBasket tilbake til start med en ny verdi.
 return viewBasket
 }
  
